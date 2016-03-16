@@ -26,6 +26,15 @@ class Login : NSObject, LoginInput {
     }
 
     func execute( username: String, password: String ) {
+        
+        guard username.characters.count > 0 else {
+            self.output?.didFailExecute("Username cannot be empty")
+            return
+        }
+        guard password.characters.count > 0 else {
+            self.output?.didFailExecute("Password cannot be empty")
+            return
+        }
 
         self.userProvider.login( username, password: password, onSuccess: {
             self.output?.didExecute()

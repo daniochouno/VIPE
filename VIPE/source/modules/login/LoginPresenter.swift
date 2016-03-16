@@ -26,14 +26,6 @@ class LoginPresenter : NSObject, LoginPresenterInput {
     }
 
     func loginAction( username: String, password: String ) {
-        guard username.characters.count > 0 else {
-            self.didFailExecute("Username cannot be empty")
-            return
-        }
-        guard password.characters.count > 0 else {
-            self.didFailExecute("Password cannot be empty")
-            return
-        }
         self.login.execute( username, password: password )
     }
 
