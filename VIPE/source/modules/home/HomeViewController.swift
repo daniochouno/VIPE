@@ -10,8 +10,6 @@ class HomeViewController : UIViewController {
 
     let presenter = HomePresenter()
 
-    var feed : [HomeViewModel]?
-
     @IBOutlet weak var collectionView: UICollectionView!
 
     @IBAction func logoutButtonPressed(sender: UIBarButtonItem) {
@@ -56,10 +54,7 @@ class HomeViewController : UIViewController {
 extension HomeViewController : UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let feed = self.feed {
-            return feed.count
-        }
-        return 0
+        return self.presenter.numberOfItemsInSection(section)
     }
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -69,11 +64,11 @@ extension HomeViewController : UICollectionViewDataSource {
         cell.nameLabel.text = ""
         cell.thumbnailImageView.image = UIImage()
 
-        if let data = self.feed?[indexPath.row] {
+        if let randomUser = self.presenter.cellForItemAtIndexPath(indexPath) {
 
-            cell.nameLabel.text = data.fullName()
-            if let pictureThumbnail = data.pictureThumbnail {
-                cell.thumbnailImageView.af_setImageWithURL( NSURL(string: pictureThumbnail)! )
+            cell.nameLabel.text = randomUser.fullName()
+            if let pictureThumbnail = randomUser.pictureThumbnail {
+                cell.thumbnailImageView.af_setImageWithURL(NSURL(string: pictureThumbnail)!)
             }
 
         }
@@ -86,8 +81,7 @@ extension HomeViewController : UICollectionViewDataSource {
 
 extension HomeViewController : HomePresenterOutput {
 
-    func didLoadData( data: [HomeViewModel] ) {
-        self.feed = data
+    func didLoadData() {
         self.collectionView.reloadData()
     }
 

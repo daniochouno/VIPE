@@ -11,7 +11,7 @@ protocol HomePresenterInput {
 }
 
 protocol HomePresenterOutput {
-    func didLoadData( data: [HomeViewModel] )
+    func didLoadData()
     func didFailLoadData( message: String )
     func didLogout()
 }
@@ -21,6 +21,8 @@ class HomePresenter : NSObject, HomePresenterInput {
     var output: HomePresenterOutput?
 
     var feed = Feed()
+
+    var array : [RandomUser]?
 
     override init() {
         super.init()
@@ -35,16 +37,24 @@ class HomePresenter : NSObject, HomePresenterInput {
         self.didLogout()
     }
 
+    func numberOfItemsInSection( section: Int ) -> Int {
+        if let array = self.array {
+            return array.count
+        }
+        return 0
+    }
+
+    func cellForItemAtIndexPath( indexPath: NSIndexPath ) -> RandomUser? {
+        return self.array?[indexPath.row]
+    }
+
 }
 
 extension HomePresenter : FeedOutput {
 
     func didExecute( data: [RandomUser] ) {
-        var randomUsers = [HomeViewModel]()
-        for randomUser in data {
-            randomUsers.append(HomeViewModel( randomUser: randomUser ))
-        }
-        self.output?.didLoadData( randomUsers )
+        self.array = data
+        self.output?.didLoadData()
     }
 
     func didFailExecute( errorMessage: String ) {

@@ -12,4 +12,14 @@ struct RandomUser {
     let pictureThumbnail : String?
     let nationality : String?
 
+    func fullName() -> String {
+        guard let first = self.nameFirst else {
+            return ""
+        }
+        guard let last = self.nameLast else {
+            return ""
+        }
+        return last + ", " + first
+    }
+
 }
