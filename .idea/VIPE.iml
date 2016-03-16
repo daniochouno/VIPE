@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/Library/Caches/AppCode34/DerivedData/VIPE-8e196f65/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode34/DerivedData/VIPE-8e196f65/Build/Intermediates/Pods.build/Debug-iphoneos/AlamofireImage.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode34/DerivedData/VIPE-8e196f65/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-VIPE.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode34/DerivedData/VIPE-8e196f65/Build/Intermediates/VIPE.build/Debug-iphoneos/VIPE.build/DerivedSources" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/VIPE/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/resources/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/resources/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/base/view/ScrollableContentViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/view/cell/HomeViewModelCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/provider/user/UserParser.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/provider/user/UserProvider.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/provider/user/UserService.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/interactor/Login.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/interactor/Feed.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/model/RandomUser.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/core/net/NetManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/view/cell/HomeViewModelCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/app/AppDelegate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/core/net/NetManager.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomeViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomeViewModel.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomePresenter.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/login/LoginViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/login/LoginPresenter.swift" isTestSource="false" />
@@ -28,17 +31,17 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Result.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Manager.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/NetworkReachabilityManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Request.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Notifications.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-VIPE/Pods-VIPE-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-VIPE/Pods-VIPE.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-VIPE/Pods-VIPE-dummy.m" isTestSource="false" />
