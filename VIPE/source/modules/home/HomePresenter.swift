@@ -30,7 +30,8 @@ class HomePresenter : NSObject, HomePresenterInput {
     }
 
     func loadDataAction() {
-        self.feed.execute( 20 )
+        self.feed.max = 20
+        self.feed.execute()
     }
 
     func logoutAction() {

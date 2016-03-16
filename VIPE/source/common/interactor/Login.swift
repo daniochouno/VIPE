@@ -6,7 +6,7 @@
 import Foundation
 
 protocol LoginInput {
-    func execute( username: String, password: String )
+    func execute()
 }
 
 protocol LoginOutput {
@@ -20,13 +20,25 @@ class Login : NSObject, LoginInput {
 
     var userProvider: UserProvider
 
+    var username : String?
+    var password : String?
+
     override init() {
         self.userProvider = UserProvider.sharedProvider
         super.init()
     }
 
-    func execute( username: String, password: String ) {
-        
+    func execute() {
+
+        guard let username = self.username else {
+            self.output?.didFailExecute("Username cannot be empty")
+            return
+        }
+        guard let password = self.password else {
+            self.output?.didFailExecute("Password cannot be empty")
+            return
+        }
+
         guard username.characters.count > 0 else {
             self.output?.didFailExecute("Username cannot be empty")
             return

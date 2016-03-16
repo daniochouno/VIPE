@@ -6,7 +6,7 @@
 import Foundation
 
 protocol FeedInput {
-    func execute( max: Int )
+    func execute()
 }
 
 protocol FeedOutput {
@@ -20,17 +20,26 @@ class Feed : NSObject, FeedInput {
 
     var userProvider: UserProvider
 
+    var max : Int?
+
     override init() {
         self.userProvider = UserProvider.sharedProvider
         super.init()
     }
 
-    func execute( max: Int ) {
+    func execute() {
 
-        self.userProvider.feed( max, onSuccess: { randomUsers in
-            self.output?.didExecute( randomUsers )
-        }, onFailure: { errorMessage in
-            self.output?.didFailExecute( errorMessage )
+        guard let max = self.max else {
+            self.output?.didFailExecute("An error appears")
+            return
+        }
+
+        self.userProvider.feed( max, onSuccess: {
+            randomUsers in
+            self.output?.didExecute(randomUsers)
+        }, onFailure: {
+            errorMessage in
+            self.output?.didFailExecute(errorMessage)
         })
 
     }

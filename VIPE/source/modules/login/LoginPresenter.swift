@@ -26,7 +26,9 @@ class LoginPresenter : NSObject, LoginPresenterInput {
     }
 
     func loginAction( username: String, password: String ) {
-        self.login.execute( username, password: password )
+        self.login.username = username
+        self.login.password = password
+        self.login.execute()
     }
 
 }
