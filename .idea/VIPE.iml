@@ -10,22 +10,23 @@
       <sourceFolder url="file://$MODULE_DIR$/VIPE/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/resources/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/resources/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomeViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomePresenter.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/login/LoginViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/login/LoginPresenter.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/base/view/ScrollableContentViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/view/cell/HomeViewModelCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/provider/user/UserParser.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/provider/user/UserProvider.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/provider/user/UserService.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/interactor/Login.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/interactor/Feed.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/model/RandomUser.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/view/cell/HomeViewModelCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/app/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/core/net/NetManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomeViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/home/HomePresenter.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/login/LoginViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/modules/login/LoginPresenter.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/core/net/NetRequest.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VIPE/source/common/app/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Response.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Error.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
@@ -36,10 +37,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Manager.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/NetworkReachabilityManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Request.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Notifications.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-VIPE/Pods-VIPE-umbrella.h" isTestSource="false" />
@@ -64,13 +65,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AlamofireImage/AlamofireImage.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AlamofireImage/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AlamofireImage/AlamofireImage.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/ImageFilter.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/Request+AlamofireImage.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/ImageCache.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/Image.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/ImageFilter.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/ImageDownloader.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/ImageDownloader.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
