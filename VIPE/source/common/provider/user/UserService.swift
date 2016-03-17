@@ -11,40 +11,45 @@ class UserService {
 
     func login( username: String, password: String, onSuccess: ((NSDictionary) -> Void)?, onFailure: ((String) -> Void)? ) {
 
-        self.netManager.get( "?results=1", parameters: [
+        var netRequest = NetRequest( path: "?results=1" )
+        netRequest.parameters = [
             "user": username,
             "password": password
-        ], onSuccess: { response in
-
+        ]
+        netRequest.onSuccess = { response in
             guard let onSuccess = onSuccess else {
                 return
             }
             onSuccess( response )
-
-        }, onFailure: { error in
+        }
+        netRequest.onFailure = { error in
             guard let onFailure = onFailure else {
                 return
             }
             onFailure( error )
-        })
+        }
+
+        self.netManager.get( netRequest )
 
     }
 
     func feed( max: Int, onSuccess: ((NSDictionary) -> Void)?, onFailure: ((String) -> Void)? ) {
 
-        self.netManager.get( "?results=\(max)", parameters: nil, onSuccess: { response in
-
+        var netRequest = NetRequest( path: "?results=\(max)" )
+        netRequest.onSuccess = { response in
             guard let onSuccess = onSuccess else {
                 return
             }
             onSuccess( response )
-
-        }, onFailure: { error in
+        }
+        netRequest.onFailure = { error in
             guard let onFailure = onFailure else {
                 return
             }
             onFailure( error )
-        })
+        }
+
+        self.netManager.get( netRequest )
 
     }
 

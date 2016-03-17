@@ -7,7 +7,7 @@ import Foundation
 import Alamofire
 
 protocol NetManagerInput {
-    func get( url: String, parameters: [String: AnyObject]?, onSuccess: ((NSDictionary) -> Void)?, onFailure: ((String) -> Void)? )
+    func get( request: NetRequest )
 }
 
 class NetManager : NSObject {
@@ -24,22 +24,22 @@ class NetManager : NSObject {
         return [ "token" : "xxx" ]
     }
 
-    func get( url: String, parameters: [String: AnyObject]?, onSuccess: ((NSDictionary) -> Void)?, onFailure: ((String) -> Void)? ) {
+    func get( request: NetRequest ) {
 
-        let path = baseUrl! + url
+        let path = baseUrl! + request.path
 
-        self.sharedManager.request(.GET, path, parameters: parameters, headers: headers())
+        self.sharedManager.request(.GET, path, parameters: request.parameters, headers: headers())
         .responseJSON { response in
 
             switch (response.result) {
             case .Success(let json):
-                guard let onSuccess = onSuccess else {
+                guard let onSuccess = request.onSuccess else {
                     return
                 }
                 onSuccess( json as! NSDictionary )
                 break
             case .Failure(let error):
-                guard let onFailure = onFailure else {
+                guard let onFailure = request.onFailure else {
                     return
                 }
                 onFailure( error.localizedDescription )

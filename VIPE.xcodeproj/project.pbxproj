@@ -22,6 +22,7 @@
 		D3A3CCE49227F9A5129D28F2 /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C10FE92309BE523C09E6 /* RandomUser.swift */; };
 		D3A3CD4256CA09A415911CF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C3E0BE2AD353570755BB /* HomeViewController.swift */; };
 		D3A3CDE25E8B4F6633EED1B4 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3CB656824BE82D79BED99 /* NetManager.swift */; };
+		D3A3CE6B4590AAB624FBFEA4 /* NetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3CB3CC797E621B1185283 /* NetRequest.swift */; };
 		D3A3CF492EA9C765E04C6959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C74E1CC393AB3F2C4AB2 /* AppDelegate.swift */; };
 		D3A3CF4E6DD2883F697CF4CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C7BF0742B30B76D7B0CA /* LoginViewController.swift */; };
 		D3A3CF747A0A918658E0BB99 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C35166B850BA72B13F4D /* HomePresenter.swift */; };
@@ -44,6 +45,7 @@
 		D3A3C7BF0742B30B76D7B0CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D3A3C8A8729501615268A160 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D3A3C9A77C506D04937FF030 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D3A3CB3CC797E621B1185283 /* NetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequest.swift; sourceTree = "<group>"; };
 		D3A3CB656824BE82D79BED99 /* NetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
 		D3A3CBC885A086C71A943773 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D3A3CCF93E4ADF1DF5D915E1 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				D3A3CB656824BE82D79BED99 /* NetManager.swift */,
+				D3A3CB3CC797E621B1185283 /* NetRequest.swift */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				D3A3CD4256CA09A415911CF7 /* HomeViewController.swift in Sources */,
 				D3A3C546DD9AD94E31367F16 /* LoginPresenter.swift in Sources */,
 				D3A3CF4E6DD2883F697CF4CF /* LoginViewController.swift in Sources */,
+				D3A3CE6B4590AAB624FBFEA4 /* NetRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
